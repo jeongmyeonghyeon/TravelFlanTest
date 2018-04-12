@@ -22,6 +22,10 @@ $("#addItemBtn").click(function() {
   $("#inputItemText").val("");
 });
 
+$("#closeBtn").click(function () {
+  $("#editText").val("");
+})
+
 function focus() {
 $("#editText").focus();
 }
