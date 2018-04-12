@@ -48,3 +48,23 @@ function saveChanges(element) {
 function deleteItem(element) {
   element.parentElement.parentElement.remove();
 }
+
+function formatTodayDate() {
+    let dateString = "Today's date is: ";
+    let d = new Date();
+    let month = '' + (d.getMonth() + 1);
+    let day = '' + d.getDate();
+    let year = d.getFullYear();
+
+    if (month.length < 2) month = '0' + month;
+    if (day.length < 2) day = '0' + day;
+
+    return dateString += [year, month, day].join('-');
+    // return dateString
+}
+
+(function () {
+  let today = formatTodayDate();
+  console.log(today);
+  $("#todayDate").append(today);
+})();

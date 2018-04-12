@@ -132,3 +132,15 @@ span {
 #editModalTitle {
   color: #00b386;
 }
+
+#dateContainer {
+  width: 640px;
+  margin: auto;
+}
+
+#todayDate {
+  color: #ffffff;
+  float: right;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
